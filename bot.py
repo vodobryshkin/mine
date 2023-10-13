@@ -129,8 +129,6 @@ class MineBot:
                             self.bot.chat("Пидорас конченый")
                         else:
                             self.bot.chat("Он лучший. А ты пидорас!!!")
-
-                            fishing()
                     elif 'выключайся' in message:
                         self.bot.quit()
                         os._exit(0)
