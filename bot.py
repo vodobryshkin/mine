@@ -1,5 +1,6 @@
 from javascript import require, On
 from time import sleep
+from random import choice
 import os
 
 mineflayer = require('mineflayer')
@@ -123,6 +124,11 @@ class MineBot:
                                     self.bot.activateItem()
                                 sleep(FISHING_INTERVAL)
                                 fishing()
+                    elif 'пидор?' in message:
+                        if choice([0, 1]):
+                            self.bot.chat("Пидорас конченый")
+                        else:
+                            self.bot.chat("Он лучший. А ты пидорас!!!")
 
                             fishing()
                     elif 'выключайся' in message:
